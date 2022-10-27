@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1519</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>449</x>
+      <y>30</y>
+      <width>421</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="Title">
+       <property name="minimumSize">
+        <size>
+         <width>419</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 20pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Monitor De Temperatura</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>140</y>
+      <width>277</width>
+      <height>334</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="LayOutTempNom">
+     <item row="1" column="2">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(148, 189, 255);</string>
+         </property>
+         <property name="text">
+          <string>Baja</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 108, 108);</string>
+         </property>
+         <property name="text">
+          <string>Alta</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(158, 255, 123);</string>
+         </property>
+         <property name="text">
+          <string>Normal</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="3">
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QPlainTextEdit" name="Tab"/>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="3">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QPlainTextEdit" name="Tnb"/>
+       </item>
+      </layout>
+     </item>
+     <item row="6" column="3">
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="3">
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="6">
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="4" column="3">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="3">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QPlainTextEdit" name="Tbb"/>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="5">
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QPlainTextEdit" name="Tna"/>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="5">
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <widget class="QPlainTextEdit" name="Tba"/>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="5">
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <widget class="QPlainTextEdit" name="Taa"/>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="4">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="3">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="0">
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="Table">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>200</y>
+      <width>311</width>
+      <height>201</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>140</y>
+      <width>309</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="3">
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1">
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="DataStop">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 108, 108);</string>
+       </property>
+       <property name="text">
+        <string>Detenerse</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QPushButton" name="Graph">
+       <property name="text">
+        <string>Graficar</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="DataStart">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(158, 255, 123);</string>
+       </property>
+       <property name="text">
+        <string>Iniciar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-40</x>
+      <y>-20</y>
+      <width>1561</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: url(:/fondo/Fondo de pantalla formas abstractas nude y blanco.png)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>530</y>
+      <width>281</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 0, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>120</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mínima</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>120</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Máxima</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>500</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Temperatura:</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>470</y>
+      <width>311</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>430</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cantidad de datos:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="DataStart_2">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>540</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(158, 255, 123);</string>
+    </property>
+    <property name="text">
+     <string>Iniciar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>590</y>
+      <width>291</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Si el número es azul, la temperatura es baja.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>620</y>
+      <width>291</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Si el número es verde, la temperatura es normal.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>650</y>
+      <width>291</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Si el número es rojo, la temperatura es alta.</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>gridLayoutWidget</zorder>
+   <zorder>gridLayoutWidget_2</zorder>
+   <zorder>Table</zorder>
+   <zorder>gridLayoutWidget_3</zorder>
+   <zorder>lcdNumber</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>textBrowser</zorder>
+   <zorder>label_8</zorder>
+   <zorder>DataStart_2</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_11</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Monitor/test.qrc"/>
+ </resources>
+ <connections/>
+</ui>
